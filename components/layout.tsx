@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import { createStyles, makeStyles, Theme, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { blue } from '@material-ui/core/colors';
 import { AppBar, Toolbar, IconButton, Typography, Button, Container } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 
@@ -39,7 +40,11 @@ export default function Layout({
   const classes = useStyles();
 
   return (
-    <div>
+    <MuiThemeProvider theme={createMuiTheme({
+      palette: {
+        primary: blue,
+      },
+    })}>
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -82,6 +87,6 @@ export default function Layout({
           </Link>
         </div>
       )}
-    </div>
+    </MuiThemeProvider>
   )
 }
