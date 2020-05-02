@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { AppBar, Toolbar, IconButton, Typography, Button } from '@material-ui/core'
+import { AppBar, Toolbar, IconButton, Typography, Button, Container } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 
 export const siteTitle = 'Sample Website'
@@ -21,6 +21,10 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
       height: '100vh',
       overflow: 'auto',
+    },
+    container: {
+      paddingTop: theme.spacing(2),
+      paddingBottom: theme.spacing(2),
     },
   }),
 );
@@ -67,7 +71,9 @@ export default function Layout({
         </AppBar>
       </div>
       <main className={classes.content}>
-        {children}
+        <Container maxWidth="lg" className={classes.container}>
+          {children}
+        </Container>
       </main>
       {!home && (
         <div>
