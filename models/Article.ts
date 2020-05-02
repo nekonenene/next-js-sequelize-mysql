@@ -14,8 +14,8 @@ export default class Article extends Model {
         id: {
           type: DataTypes.BIGINT.UNSIGNED,
           primaryKey: true,
-          allowNull: false,
           autoIncrement: true,
+          allowNull: false,
         },
         title: {
           type: DataTypes.STRING(100),
