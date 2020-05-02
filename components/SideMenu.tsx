@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 
 export default function SideMenu() {
   const classes = useStyles();
-  const [state, setState] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
 
   const toggleDrawer = (open: boolean) => (
     event: React.KeyboardEvent | React.MouseEvent,
@@ -30,10 +30,10 @@ export default function SideMenu() {
       return;
     }
 
-    setState(open);
+    setIsOpen(open);
   };
 
-  const list = () => (
+  const menuList = () => (
     <div
       className={clsx(classes.list)}
       role="presentation"
@@ -64,11 +64,11 @@ export default function SideMenu() {
     <div>
       <Button onClick={toggleDrawer(true)}>open drawer</Button>
       <SwipeableDrawer
-        open={state}
+        open={isOpen}
         onClose={toggleDrawer(false)}
         onOpen={toggleDrawer(true)}
       >
-        {list()}
+        {menuList()}
       </SwipeableDrawer>
     </div>
   );
