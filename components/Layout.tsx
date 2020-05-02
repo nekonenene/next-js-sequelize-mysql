@@ -90,7 +90,6 @@ export default function Layout({
             <Link href='/'>
               <Typography variant="h6" className={classes.title}>{siteTitle}</Typography>
             </Link>
-            <Button color="inherit">Login</Button>
           </Toolbar>
         </AppBar>
         <SwipeableDrawer open={isOpen} onClose={toggleDrawer(false)} onOpen={toggleDrawer(true)}>
