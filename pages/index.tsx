@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/Layout';
+import Layout from '../components/Layout';
+import { siteTitle } from '../components/HeadTags';
 
 function HomePage() {
   return (
