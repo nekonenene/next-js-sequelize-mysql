@@ -4,6 +4,7 @@ import { createStyles, makeStyles, Theme, MuiThemeProvider } from '@material-ui/
 import { AppBar, Toolbar, IconButton, Typography, Button, Container } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import MyTheme from './MyTheme';
+import SideMenu from './SideMenu';
 
 export const siteTitle = 'Sample Website';
 
@@ -60,7 +61,7 @@ export default function Layout({
         <meta name="twitter:card" content="summary_large_image" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
       </Head>
-      <div className={classes.root}>
+      <header className={classes.root}>
         <AppBar position="static">
           <Toolbar>
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
@@ -70,7 +71,8 @@ export default function Layout({
             <Button color="inherit">Login</Button>
           </Toolbar>
         </AppBar>
-      </div>
+        <SideMenu />
+      </header>
       <main className={classes.content}>
         <Container maxWidth="lg" className={classes.container}>
           {children}
