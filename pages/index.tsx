@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import Head from 'next/head';
+import Layout, { siteTitle } from '../components/layout';
 
 function HomePage() {
   return (
@@ -12,4 +12,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default HomePage;

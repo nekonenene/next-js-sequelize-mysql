@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from 'next/head';
+import Link from 'next/link';
 import { createStyles, makeStyles, Theme, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { blue } from '@material-ui/core/colors';
-import { AppBar, Toolbar, IconButton, Typography, Button, Container } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu'
+import { AppBar, Toolbar, IconButton, Typography, Button, Container } from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
 
-export const siteTitle = 'Sample Website'
+export const siteTitle = 'Sample Website';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
