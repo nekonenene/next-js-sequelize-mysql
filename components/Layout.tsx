@@ -8,6 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import MyTheme from './MyTheme';
 import HeadTags, { siteTitle } from './HeadTags';
+import Footer from './Footer';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -25,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     content: {
       flexGrow: 1,
-      height: '100vh',
+      height: '80vh',
       overflow: 'auto',
     },
     container: {
@@ -108,6 +109,7 @@ export default function Layout({
           </Link>
         </div>
       )}
+      <Footer />
     </MuiThemeProvider>
   )
 }
