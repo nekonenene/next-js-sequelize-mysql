@@ -87,7 +87,9 @@ export default function Layout({
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>{siteTitle}</Typography>
+            <Link href='/'>
+              <Typography variant="h6" className={classes.title}>{siteTitle}</Typography>
+            </Link>
             <Button color="inherit">Login</Button>
           </Toolbar>
         </AppBar>
