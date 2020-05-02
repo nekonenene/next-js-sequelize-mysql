@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { createStyles, makeStyles, Theme, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import { blue } from '@material-ui/core/colors';
+import { createStyles, makeStyles, Theme, MuiThemeProvider } from '@material-ui/core/styles';
 import { AppBar, Toolbar, IconButton, Typography, Button, Container } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import MyTheme from './MyTheme';
