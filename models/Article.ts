@@ -12,16 +12,19 @@ export default class Article extends Model {
     this.init(
       {
         id: {
-          type: DataTypes.INTEGER.UNSIGNED,
+          type: DataTypes.BIGINT.UNSIGNED,
+          primaryKey: true,
+          allowNull: false,
           autoIncrement: true,
-          primaryKey: true
         },
         title: {
           type: DataTypes.STRING(100),
+          allowNull: false,
           defaultValue: '',
         },
         body: {
           type: DataTypes.TEXT,
+          allowNull: false,
           defaultValue: '',
         }
       }, {
