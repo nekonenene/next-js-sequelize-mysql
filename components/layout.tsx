@@ -4,6 +4,7 @@ import { createStyles, makeStyles, Theme, MuiThemeProvider, createMuiTheme } fro
 import { blue } from '@material-ui/core/colors';
 import { AppBar, Toolbar, IconButton, Typography, Button, Container } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
+import MyTheme from './MyTheme';
 
 export const siteTitle = 'Sample Website';
 
@@ -40,11 +41,7 @@ export default function Layout({
   const classes = useStyles();
 
   return (
-    <MuiThemeProvider theme={createMuiTheme({
-      palette: {
-        primary: blue,
-      },
-    })}>
+    <MuiThemeProvider theme={MyTheme}>
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -52,7 +49,7 @@ export default function Layout({
         <meta name="author" content="nekonenene" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" href="/images/favicon_192.png" sizes="192x192" />
-        <meta name="theme-color" content="#2b0de8" />
+        <meta name="theme-color" content={MyTheme.palette.primary.main} />
 
         <title>{siteTitle}</title>
         <meta name="og:title" content={siteTitle} />
