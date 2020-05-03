@@ -6,12 +6,10 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
     const request = req.body;
 
     const createArticle = async () => {
-      const article = models.Article.build({
+      return await models.Article.create({
         title: request.title,
         body: request.body,
       });
-
-      return await article.save();
     }
 
     if (!request.title || !request.body) {
