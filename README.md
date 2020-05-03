@@ -1,6 +1,7 @@
 # next-js-sequelize-mysql
 
-sequelize を使ってみた。……が、正直使いづらいと感じる。公式ドキュメントもあまり親切とは言えないし。
+[sequelize](https://sequelize.org) を使ってみた。……が、正直使いづらいと感じる。  
+公式ドキュメントも TypeScript 向けの説明は不足していてあまり親切とは言えないし。
 
 どんな手順でおこなったかは以下のブログにメモレベルだがまとめた。  
 [https://nekonenene.hatenablog.com/entry/2020/05/03/102837](https://nekonenene.hatenablog.com/entry/2020/05/03/102837)
