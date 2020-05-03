@@ -8,6 +8,8 @@
 
 うーん、Node.js では ORM 使わなくていいんじゃないかな。
 
+→ というわけで sequelize 使わないパターンも作ってみた: [https://github.com/nekonenene/next-js-mysql](https://github.com/nekonenene/next-js-mysql)
+
 
 ## Required
 
